@@ -1,6 +1,6 @@
 import flatpickr from "flatpickr";
 import Notiflix from "notiflix";
-import 'flatpickr/dist/flatpickr.min.css';
+import '../../node_modules/flatpickr/dist/flatpickr.min.css';
 
 const refs = {
   datePicker: document.querySelector("#datetime-picker"),
@@ -8,7 +8,7 @@ const refs = {
   hoursEl: document.querySelector("[data-hours]"),
   minutesEl: document.querySelector("[data-minutes]"),
   secondsEl: document.querySelector("[data-seconds]"),
-  startBtn: document.querySelector('[data-start]')
+  startBtn: document.querySelector('[data-start]'),
 };
 
 function convertMs(ms) {
