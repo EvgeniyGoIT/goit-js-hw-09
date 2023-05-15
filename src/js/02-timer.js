@@ -82,5 +82,3 @@ refs.startBtn.addEventListener("click", () => {
     timer.start();
   }
 });
-
-console.log('Hello world!')
