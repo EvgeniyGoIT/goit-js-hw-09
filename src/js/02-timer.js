@@ -20,6 +20,12 @@ const timer = {
     intervalId = setInterval(() => {
       const currentTime = Date.now();
       const deltaTime = selectedDate - currentTime;
+
+      if (deltaTime <= 0) {
+        timer.stop();
+        return;
+      }
+
       const { days, hours, minutes, seconds } = convertMs(deltaTime);
 
       refs.daysEl.textContent = days;
