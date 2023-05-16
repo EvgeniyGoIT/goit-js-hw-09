@@ -23,6 +23,7 @@ const timer = {
 
       if (deltaTime <= 0) {
         timer.stop();
+        refs.startBtn.disabled = true;
         return;
       }
 
